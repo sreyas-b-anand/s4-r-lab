@@ -2,4 +2,5 @@ data(airquality)
 
 str(airquality)
 
-stripchart(airquality, main="This is main" , xlab="X axis" , ylab = "Y axis" , method = "jitter" , vertical="true")
+stripchart(airquality[,c("Ozone" , "Solar.R" , "Wind" , "Temp")] , main="This is main" , xlab="X axis" , 
+           ylab = "Y axis" ,ylim = c(0,100) , vertical="true")
